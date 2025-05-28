@@ -1,9 +1,9 @@
 import Box from '../components/Box'
 
-export default function Recovery(){
+export default function Register() {
   return (
     <>
-      <Box status="recovery" />
+      <Box status="register" />
     </>
   )
 }

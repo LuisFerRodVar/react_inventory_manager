@@ -1,0 +1,12 @@
+.box{
+  background-color: var(--secondary-background);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--main-text);
+  box-shadow: 0 0 10px var(--main-text);
+  border-radius: 1rem;
+  width: 500px;
+  height: 500px;
+}
