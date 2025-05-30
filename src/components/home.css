@@ -1,0 +1,25 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.home__boxs{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.home__item{
+  display: flex;
+  border: 1px solid var(--main-text);
+  padding: 1rem;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.home__title{
+  font-size: 3rem;
+}
+
+

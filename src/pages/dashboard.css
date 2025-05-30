@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard aside {
+  width: 250px; 
+  padding: 1rem;
+  background-color: var(--secondary-background);
+  box-shadow: 0 0 10px var(--main-text);
+}
+
+.dashboard section {
+  background-color: var(--main-background);
+  flex-grow: 1;
+  padding: 2rem;
+}
+
