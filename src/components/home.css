@@ -14,9 +14,16 @@
   display: flex;
   border: 1px solid var(--main-text);
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   border-radius: 1rem;
 }
+
+.item__text{
+  font-size: 1.5rem;
+}
+
 
 .home__title{
   font-size: 3rem;

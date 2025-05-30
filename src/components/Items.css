@@ -1,0 +1,81 @@
+
+.items {
+  padding: 2rem;
+  background-color: var(--main-background);
+  color: var(--main-text);
+  min-height: 100vh;
+}
+
+.items__form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  background-color: var(--secondary-background);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.items__form input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--main-background);
+  color: var(--main-text);
+  border: 1px solid var(--interactive);
+}
+
+.items__form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--interactive);
+  color: var(--main-background);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.items__form button:hover {
+  background-color: var(--accent);
+  color: var(--main-text);
+}
+
+.items__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.items__table th,
+.items__table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--main-background);
+  text-align: left;
+}
+
+.items__table th {
+  background-color: var(--main-background);
+  color: var(--secondary-text);
+}
+
+.items__table td {
+  color: var(--main-text);
+}
+
+.items__actions button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  background-color: var(--interactive);
+  color: var(--main-background);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.items__actions button:hover {
+  background-color: var(--accent);
+  color: var(--main-text);
+}
+

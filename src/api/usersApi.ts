@@ -1,5 +1,5 @@
 
-export const BASE_URL = "http://localhost:5285/api/users"; // Update if needed
+export const BASE_URL = "http://localhost:5285/api/users";
 
 export interface User {
   id: number;

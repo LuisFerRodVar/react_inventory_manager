@@ -1,5 +1,5 @@
 
-export const BASE_URL = "http://localhost:5285/api/items"; // Update if needed
+export const BASE_URL = "http://localhost:5285/api/items";
 
 export interface Item {
   id: number;
@@ -44,5 +44,21 @@ export async function deleteItem(id: number): Promise<void> {
     method: "DELETE",
   });
   if (!response.ok) throw new Error(`Failed to delete item with ID ${id}.`);
+}
+
+export async function getItemCount(): Promise<number> {
+  const res = await fetch(`${BASE_URL}/count`)
+  if (!res.ok) {
+    throw new Error('Failed to fetch item count')
+  }
+  return res.json()
+}
+
+export async function getTotalPrice(): Promise<number> {
+  const res = await fetch(`${BASE_URL}/total-price`)
+  if (!res.ok) {
+    throw new Error('Failed to fetch total price')
+  }
+  return res.json()
 }
 
