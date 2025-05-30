@@ -1,4 +1,6 @@
-
+*{
+  font-size: 1.6rem;
+}
 .items {
   padding: 2rem;
   background-color: var(--main-background);

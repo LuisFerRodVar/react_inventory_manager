@@ -41,7 +41,7 @@ export default function Items() {
       setError("Please enter name and price");
       return;
     }
-    const priceNumber = parseFloat(newPrice);
+    const priceNumber = parseInt(newPrice);
     if (isNaN(priceNumber) || priceNumber < 0) {
       setError("Price must be a non-negative number");
       return;
@@ -126,13 +126,13 @@ return (
       />
       <input
         type="number"
-        step="0.01"
+        step="1"
         min="0"
         placeholder="Price"
         value={newPrice}
         onChange={(e) => setNewPrice(e.target.value)}
       />
-      <button type="submit">Add Item</button>
+      <button type="submit">Agregar</button>
     </form>
 
     <table className="items__table">
@@ -159,15 +159,15 @@ return (
               <td>
                 <input
                   type="number"
-                  step="0.01"
+                  step="1"
                   min="0"
                   value={editPrice}
                   onChange={(e) => setEditPrice(e.target.value)}
                 />
               </td>
               <td className="items__actions">
-                <button onClick={handleUpdate} type="submit">Save</button>
-                <button onClick={cancelEdit} type="button">Cancel</button>
+                <button onClick={handleUpdate} type="submit">Guardar</button>
+                <button onClick={cancelEdit} type="button">Cancelar</button>
               </td>
             </tr>
           ) : (
@@ -176,8 +176,8 @@ return (
               <td>{item.name}</td>
               <td>${item.price}</td>
               <td className="items__actions">
-                <button onClick={() => startEdit(item)}>Edit</button>
-                <button onClick={() => handleDelete(item.id)}>Delete</button>
+                <button onClick={() => startEdit(item)}>Editar</button>
+                <button onClick={() => handleDelete(item.id)}>Eliminar</button>
               </td>
             </tr>
           )
