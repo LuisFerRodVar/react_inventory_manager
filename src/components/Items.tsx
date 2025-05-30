@@ -120,7 +120,7 @@ return (
     <form onSubmit={handleCreate} className="items__form">
       <input
         type="text"
-        placeholder="Name"
+        placeholder="Nombre"
         value={newName}
         onChange={(e) => setNewName(e.target.value)}
       />
@@ -128,7 +128,7 @@ return (
         type="number"
         step="1"
         min="0"
-        placeholder="Price"
+        placeholder="Precio"
         value={newPrice}
         onChange={(e) => setNewPrice(e.target.value)}
       />
@@ -139,9 +139,9 @@ return (
       <thead>
         <tr>
           <th>ID</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Actions</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
