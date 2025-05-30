@@ -44,11 +44,12 @@ export default function LoginForm() {
         required
       />
 
-      <a className="form__link" href="#">Recuperar contraseña</a>
+      <a className="form__link" onClick={ () => navigate("recovery")}>Recuperar contraseña</a>
 
       {error && <p className="form__error">{error}</p>}
 
       <button className="form__button" type="submit">Ingresar</button>
+      <a className="form__link" onClick={ () => navigate("register")}>Crear cuenta</a>
     </form>
   )
 }

@@ -22,6 +22,11 @@
 .form__link {
   font-style: italic;
   color: var(--secondary-text);
+  cursor: pointer;
+}
+
+.form__link:hover{
+  color: var(--interactive);
 }
 
 .form__button {
