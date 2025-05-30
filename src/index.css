@@ -1,9 +1,10 @@
 :root {
-  --main-text: #eae8ff;
-  --secondary-background: #d8d5db;
-  --main-background: #1a1b26;
-  --secondary-text: #2d3142;
-  --interactive: #b0dyff;
+  --main-text: #f4f4f9;              /* texto principal: blanco suave */
+  --secondary-text: #7f8c8d;         /* texto secundario: gris azulado */
+  --main-background: #1e1f29;        /* fondo principal: gris oscuro azulado */
+  --secondary-background: #2e2f3a;   /* fondo secundario: un poco más claro */
+  --interactive: #82aaff;           /* botones, enlaces: azul moderno vibrante */
+  --accent: #fca17d;                /* acento o elementos destacados: coral suave */
 }
 
 /* Reset */
@@ -31,8 +32,8 @@ body {
   min-width: 100vw;
   position: relative;
   text-rendering: optimizeLegibility;
-  background-color: var(--main-text);
-  color: var(--main-background);
+  background-color: var(--main-background);
+  color: var(--main-text);
 }
 
 ul,

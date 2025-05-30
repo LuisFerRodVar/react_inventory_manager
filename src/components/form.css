@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.form__title {
+  color: var(--main-text);
+}
+
+.form__input {
+  border: 1px solid var(--secondary-text);
+  color: var(--main-text);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-background);
+}
+
+.form__link {
+  font-style: italic;
+  color: var(--secondary-text);
+}
+
+.form__button {
+  font-size: 1.5rem;
+  background-color: var(--interactive);
+  border: 1px solid var(--interactive);
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
